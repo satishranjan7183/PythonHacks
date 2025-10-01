@@ -7,13 +7,16 @@ terraform {
     }
   }
   cloud {
-    organization = "CloudQuickLabs"
+#    organization = "CloudQuickLabs"
+    organization = "satishranjan7183"
     workspaces {
-      name = "AzureLabs"
+#      name = "AzureLabs"
+      name = "azurelab"
     }
   }
 }
 
 provider "azurerm" {
   features {}
+  subscription_id = "38d52de4-2fb6-4a85-96fb-5ba22d363e4e"
 }
